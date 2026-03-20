@@ -1,3 +1,150 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/proxima-nova.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Regular Italic */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_regular_italic-BF64a625c94445e.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_medium_italic-BF64a625c928c55.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_bold_italic-BF64a625c93b0ce.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Black */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_black-BF64a625c944b08.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Black Italic */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_black_italic-BF64a625c93406c.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_light_italic-BF64a625c93ac64.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Thin */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_thin-BF64a625c9034b9.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Thin Italic */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/assets/fonts/HvDTrial_Brandon_Grotesque_thin_italic-BF64a625c918a96.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+
+@theme {
+  --font-proxima: 'Proxima Nova';
+}
+
+@theme {
+  --font-brandon: "Brandon Grotesque", sans-serif;
+}
+
 
 @import 'tailwindcss';
+
+body {
+    font-family: var(--font-proxima);
+}
+
+@layer components {
+  .footer-page {
+    @apply flex flex-col;
+  }
+
+  .footer-page p {
+    @apply font-semibold tracking-[0.2em];
+  }
+
+  .footer-page a{
+    @apply text-sm underline font-extralight;
+  }
+
+  .container-icons {
+    @apply flex gap-4;
+  }
+
+  .container-icons img {
+    @apply w-6 h-6;
+  }
+
+  .spaced {
+    @apply tracking-[0.3em];
+  }
+
+}
+
+
+
+
