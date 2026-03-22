@@ -124,11 +124,11 @@ body {
   }
 
   .footer-page p {
-    @apply font-semibold tracking-[0.2em];
+    @apply font-bold tracking-[0.2em];
   }
 
   .footer-page a{
-    @apply text-sm underline font-extralight;
+    @apply underline underline-offset-4 font-[50] text-sm;
   }
 
   .container-icons {

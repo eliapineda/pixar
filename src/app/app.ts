@@ -2,12 +2,12 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { Banner } from './components/banner/banner';
-import { Collage } from './components/collage/collage';
+import { Content } from './components/content/content';
 import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Banner, Collage, Footer],
+  imports: [RouterOutlet, Header, Banner, Content, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
